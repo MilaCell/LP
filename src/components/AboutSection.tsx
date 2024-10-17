@@ -30,9 +30,9 @@ const AboutSection: React.FC = () => {
             Transformando Seu Aparelho em Novo, Sempre!
           </h3>
         </div>
-        <PlayIcon size={300} color="#fe090a"  className='hidden md:visible absolute -top-10 -left-72 z-0' 
+        <PlayIcon size={300} color="#fe090a"  className='hidden md:block absolute -top-10 -left-72 z-0' 
          />  
-        <PlayIcon size={300} color="#fe090a"  className='hidden md:visible absolute -top-10 -right-72 z-0'  style={{
+        <PlayIcon size={300} color="#fe090a"  className='hidden md:block absolute -top-10 -right-72 z-0'  style={{
             transform: 'rotate(180deg)'
           
         }}/>  
