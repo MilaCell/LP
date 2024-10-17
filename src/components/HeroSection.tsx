@@ -57,7 +57,7 @@ const HeroSection = () => {
           animate="visible"
           variants={textVariants}
         >
-          <div className='mt-16 sm:mt-32 md:mt-64 sm:ml-16 ml-8 max-w-[70%] sm:max-w-full'>
+          <div className='mt-16 sm:mt-32 md:mt-64 sm:ml-16 ml-4 max-w-[70%] sm:max-w-full'>
             <motion.p variants={textVariants} className="font-bold leading-7 text-4xl sm:text-5xl md:text-6xl lg:text-9xl text-[#000] uppercase font-['Roboto_Condensed']" style={{lineHeight: 1}}>
               especialistas em<br/> 
               <motion.span variants={textVariants} className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-9xl text-[#fe090a] sm:tracking-tighter uppercase">

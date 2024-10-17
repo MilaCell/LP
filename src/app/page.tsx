@@ -6,9 +6,10 @@ import Services from '../components/Services';
 import WhyMeSection from '../components/WhyMeSection';
 import Footer from '../components/Footer';
 import TestimonialsSection from '@/components/TestimonialsSection';
-import TestSection from '@/components/TestSection';
+import ContactSection from '@/components/ContactSection';
 import SupportSection from '@/components/SupportSection';
-
+import {DiagonalDivisionTopLeft} from '@/components/DiagonalSvg';
+import LocationSection from '@/components/LocationSection';
 const Home: React.FC = () => {
   return (
     <div>
@@ -18,7 +19,6 @@ const Home: React.FC = () => {
       <div className='w-full flex justify-center'>  
         <AboutSection />
       </div>
-      {/* SVG diagonal na parte inferior da primeira section */}
       <div className="w-full">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,6 @@ const Home: React.FC = () => {
         preserveAspectRatio="none"
         className="w-full h-[150px]"
       >
-        {/* A parte de cima é transparente, a parte de baixo é preta */}
         <polygon fill="#000" points="0,229.437 1921.875,0 1921.875,229.437" />
       </svg>
     </div>
@@ -47,11 +46,14 @@ const Home: React.FC = () => {
       </div>
       {/* <div className='w-full flex justify-center'>
         <TestimonialsSection />
+      </div> */}
+      <div className='w-full flex justify-center'>
+        <ContactSection />
       </div>
       <div className='w-full flex justify-center'>
-        <TestSection />
+        <LocationSection />
       </div>
-      <SupportSection/> */}
+      {/* <SupportSection/> */}
       <Footer />
     </div>
   );

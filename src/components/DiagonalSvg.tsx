@@ -7,7 +7,7 @@ export const DiagonalDivisionTopLeft = () => {
           preserveAspectRatio="none"
           className="w-full h-[150px]"
         >
-          <polygon fill="#070708" points="0,229.437 1921.875,0 0,0 " />
+          <polygon fill="#000" points="0,229.437 1921.875,0 0,0 " />
         </svg>
       </div>
   );
@@ -22,7 +22,7 @@ export const DiagonalDivisionTopRight = () => {
         preserveAspectRatio="none"
         className="w-full h-[150px]"
       >
-        <polygon fill="#070708" points="1921.875,229.437 0,0 1921.875,0 " />
+        <polygon fill="#000" points="1921.875,229.437 0,0 1921.875,0 " />
       </svg>
     </div>
   );
@@ -38,7 +38,7 @@ export const DiagonalDivisionBottomLeft = () => {
         className="w-full h-[150px]"
       >
         {/* A parte de cima é transparente, a parte de baixo é preta */}
-        <polygon fill="#070708" points="0,229.437 1921.875,0 1921.875,229.437" />
+        <polygon fill="#000" points="0,229.437 1921.875,0 1921.875,229.437" />
       </svg>
     </div>
   )
