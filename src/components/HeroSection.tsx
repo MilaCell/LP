@@ -34,19 +34,19 @@ const HeroSection = () => {
   return (
     <section
       id="Hero"
-      className="relative min-h-screen flex flex-col justify-center items-center text-center text-white overflow-hidden font-yorkten-slab w-[100vw]"
+      className="relative min-h-screen flex flex-col justify-center items-center text-center border-b-2 text-white overflow-hidden font-yorkten-slab w-[100vw]"
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0 overflow-hidden w-[100vw]">
-        <Image
+        {/* <Image
           src="/banner.jpg"
           alt="Banner"
           layout="fill"
           objectFit="cover"
           className="filter opacity-60"
           priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-tr from-white via-white/70 to-transparent opacity-100" />
+        /> */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-white via-white/70 to-[#fe090946] opacity-100" />
       </div>
 
       <AnimatedPlayIcons />
