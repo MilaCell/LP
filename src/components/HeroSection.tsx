@@ -34,10 +34,10 @@ const HeroSection = () => {
   return (
     <section
       id="Hero"
-      className="relative min-h-screen flex flex-col justify-center items-center text-center text-white overflow-hidden font-yorkten-slab"
+      className="relative min-h-screen flex flex-col justify-center items-center text-center text-white overflow-hidden font-yorkten-slab w-[100vw]"
     >
       {/* Background Image */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
+      <div className="absolute inset-0 z-0 overflow-hidden w-[100vw]">
         <Image
           src="/banner.jpg"
           alt="Banner"
@@ -57,14 +57,14 @@ const HeroSection = () => {
           animate="visible"
           variants={textVariants}
         >
-          <div className='mt-16 sm:mt-32 md:mt-64 ml-16 max-w-[70%] sm:max-w-full'>
-            <motion.p variants={textVariants} className="font-bold leading-7 text-5xl sm:text-5xl md:text-6xl lg:text-9xl text-[#000] uppercase font-['Roboto_Condensed']" style={{lineHeight: 1}}>
+          <div className='mt-16 sm:mt-32 md:mt-64 sm:ml-16 ml-8 max-w-[70%] sm:max-w-full'>
+            <motion.p variants={textVariants} className="font-bold leading-7 text-4xl sm:text-5xl md:text-6xl lg:text-9xl text-[#000] uppercase font-['Roboto_Condensed']" style={{lineHeight: 1}}>
               especialistas em<br/> 
-              <motion.span variants={textVariants} className="font-bold text-5xl sm:text-5xl md:text-6xl lg:text-9xl text-[#fe090a] sm:tracking-tighter uppercase">
+              <motion.span variants={textVariants} className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-9xl text-[#fe090a] sm:tracking-tighter uppercase">
                 ELETRÔNICOS E CELULARES
               </motion.span>
             </motion.p>
-            <motion.p variants={textVariants} className="text-3xl sm:text-3xl md:text-3xl lg:text-4xl text-black mt-4 font-['Roboto_Condensed']">
+            <motion.p variants={textVariants} className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl text-black mt-4 font-['Roboto_Condensed']">
               Assistência em Geral, Capinha, Película e Muito Mais.
             </motion.p> 
             <div className='w-full sm:w-[80%] md:w-[70%] lg:w-[60%] flex items-center justify-start mt-6 -skew-x-12'>
@@ -74,7 +74,7 @@ const HeroSection = () => {
                   className="
                     inline-flex items-center justify-center
                     text-3xl text-white
-                    py-8 px-6 hover:px-12
+                    py-6 px-4 md:py-8 md:px-6 hover:px-12
                     mt-4 sm:mt-6
                     bg-[#fe090a] hover:bg-black
                     hover:text-white
