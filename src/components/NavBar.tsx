@@ -34,6 +34,7 @@ const Navbar: React.FC = () => {
                   width={180}
                   height={80}
                   className="w-auto h-auto skew-x-12"
+                  priority
                   />
               </Link>
             </div>

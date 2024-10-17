@@ -12,7 +12,7 @@ interface ServiceFeatureProps {
 }
 
 const ServiceFeature: React.FC<ServiceFeatureProps> = ({ number, title, description, imageSrc, isRed }) => (
-  <div className={`sticky top-0 w-full py-10 sm:py-20 ${isRed ? 'bg-[#fe090a]' : 'bg-white'}`}>
+  <div className={`sticky top-0 w-full pt-20  py-10 sm:py-20 ${isRed ? 'bg-[#fe090a]' : 'bg-white'}`}>
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
       <div className="w-full lg:w-1/2 pr-0 lg:pr-8 flex flex-col sm:flex-row gap-4 items-center mb-8 lg:mb-0">
         <div className={`text-6xl sm:text-8xl lg:text-[15rem] font-black ${isRed ? 'text-white' : 'text-[#fe090a]'}`}>{number}</div>
