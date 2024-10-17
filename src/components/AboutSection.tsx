@@ -3,7 +3,7 @@ import { PlayIcon } from './Play';
 import { Wrench, UserCheck, ShieldCheck, Package } from 'lucide-react';
 const AboutSection: React.FC = () => {
   return (
-    <section id="About" className="pb-40 pt-60 max-w-[100%] md:max-w-7xl mx-auto px-12 md:px-4">
+    <section id="About" className="pb-40 pt-60 max-w-[100%] md:max-w-6xl mx-auto px-12 md:px-4">
       <div className="text-center relative">
         <div className='absolute bottom-[90%] sm:bottom-[85%] md:bottom-[70%] left-0 right-0 flex items-center justify-center'>        
           <h2
@@ -29,16 +29,16 @@ const AboutSection: React.FC = () => {
             Transformando Seu Aparelho em Novo, Sempre!
           </h3>
         </div>
-        <PlayIcon size={300} color="#fe090a"  className='hidden md:block absolute -top-10 -left-72 z-0' 
+        <PlayIcon size={300} color="#fe090a"  className='hidden xl:block absolute -top-10 -left-72 z-0' 
          />  
-        <PlayIcon size={300} color="#fe090a"  className='hidden md:block absolute -top-10 -right-72 z-0'  style={{
+        <PlayIcon size={300} color="#fe090a"  className='hidden xl:block absolute -top-10 -right-72 z-0'  style={{
             transform: 'rotate(180deg)'
           
         }}/>  
         
-        <PlayIcon size={100} color="#fe090a"  className='md:hidden absolute top-[100%] -left-[12%] md:top-[105%] md:-left-[5%] z-0' 
+        <PlayIcon size={100} color="#fe090a"  className='xl:hidden absolute top-[100%] -left-[9%] md:top-[105%] sm:-left-[-10%] md:-left-[5%] z-0' 
          />  
-        <PlayIcon size={100} color="#fe090a"  className='md:hidden absolute top-[100%] -right-[12%] md:top-[105%] md:-right-[5%] z-0'  style={{
+        <PlayIcon size={100} color="#fe090a"  className='xl:hidden absolute top-[100%] -right-[9%] md:top-[105%] sm:-right-[-10%] md:-right-[5%] z-0'  style={{
             transform: 'rotate(180deg)'
           
         }}/>

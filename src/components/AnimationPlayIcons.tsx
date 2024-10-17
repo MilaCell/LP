@@ -57,7 +57,8 @@ const AnimatedPlayIcons: React.FC = () => {
           strokeWidth: 2,
           style: {
             transform: column.color === "#fe090a" ? 'rotate(180deg)' : 'none',
-          }
+          },
+          noFill: column.color === "#fe090a" ? false : true
         };
 
         return (
