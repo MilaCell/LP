@@ -23,11 +23,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
             <h4 className="text-lg font-semibold mb-4">Links Rápidos</h4>
             <ul className="text-gray-600">
-              <li><Link href="https://central.xpandtec.com.br/central_assinante_web/login" target="_blank">Área do Cliente</Link></li>
-              <li><Link href="https://wa.me/559591312670" target="_blank">Fale conosco</Link></li>
-              <li><Link href="/privacidade" target="_blank">Política de privacidade</Link></li>
-              <li><Link href="/termos" target="_blank">Termos de uso</Link></li>
-              <li><Link href="https://fast.com/pt/" target="_blank">Teste velocidade internet</Link></li>
+              <li><Link href="https://www.instagram.com/milacell_rp" target="_blank">Instagram</Link></li>
             </ul>
           </div>
 
@@ -35,12 +31,12 @@ const Footer: React.FC = () => {
           <div className="flex flex-col items-center md:items-start">
             <h4 className="text-lg font-semibold mb-4">Atendimento</h4>
             <ul className="text-gray-600">
-              <li>Email: <a href="mailto:financeiro@xpandtec.com.br">financeiro@xpandtec.com.br</a></li>
-              <li>Telefone: +55 (95) 9 9131-2670</li>
+              <li>Telefone: +55 (16) 9 8184-1942</li>
+
               <li>
                 Instagram:{' '}
-                <a href="https://www.instagram.com/xpandtec/?igsh=M2R0cm96ZXp4bGhh" target="_blank" rel="noreferrer">
-                  @xpandtec
+                <a href="https://www.instagram.com/milacell_rp" target="_blank" rel="noreferrer">
+                  @milacell_rp
                 </a>
               </li>
             </ul>
@@ -49,8 +45,8 @@ const Footer: React.FC = () => {
 
         {/* Informação legal */}
         <div className="mt-10 text-center text-gray-600 text-sm">
-          XPAND INTERNET & TECNOLOGIA LTDA | CNPJ: 53.085.807/0001-30 |
-          Rua Nivaldo da Conceição Gutierrez, 517 – Pintolândia – Boa Vista – RR
+          MILA CELL |
+          Rua João Guião 1010 - Vila Virgínia
         </div>
 
         {/* Feito com */}

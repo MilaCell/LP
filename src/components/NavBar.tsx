@@ -14,17 +14,18 @@ const Navbar: React.FC = () => {
     py-5 px-8 text-2xl leading-none
     bg-[#ffffff] text-black
     italic -skew-x-12
+    h-16
     transition-all duration-300
-    hover:bg-[#fe090a]
+    hover:bg-[#fe090a] hover:text-white
     hover:px-10
     font-['Mona_Sans_Medium',_Tahoma,_sans-serif]
   `;
 
   return (
     <div className={`fixed w-full z-50 transition-all duration-300 bg-transparent`}>
-      <div className="px-4 sm:px-6 lg:px-8">
+      <div>
         <div className="flex items-center justify-between">
-          <div className='bg-[#fe090a] min-w-60 h-full -skew-x-12 px-6 py-[6.5px]'>
+          <div className='flex items-center bg-[#fe090a] min-w-60 -skew-x-12 px-6 h-16'>
             
               <Link href="#Hero" className="flex-shrink-0  text-white">
                 <Image
@@ -32,7 +33,7 @@ const Navbar: React.FC = () => {
                   alt="Logo"
                   width={180}
                   height={80}
-                  className="w-auto h-full skew-x-12"
+                  className="w-auto h-auto skew-x-12"
                   />
               </Link>
             </div>
@@ -53,18 +54,18 @@ const Navbar: React.FC = () => {
               <span className="skew-x-12 inline-block">Contato</span>
             </Link>
           </nav>
-          <div className="md:hidden">
+          <div className="md:hidden h-16 w-16 bg-white">
             <button
               onClick={toggleMenu}
-              className="text-white focus:outline-none"
+              className=" flex items-center justify-center text-white focus:outline-none h-16 w-16 bg-white"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="#000">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="#000">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               )}
@@ -73,12 +74,12 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden bg-[#070708]">
-          <Link href="#Hero" className="block py-2 px-4 text-white hover:bg-[#fe090a]">Home</Link>
-          <Link href="#About" className="block py-2 px-4 text-white hover:bg-[#fe090a]">Sobre</Link>
-          <Link href="#Service" className="block py-2 px-4 text-white hover:bg-[#fe090a]">Serviços</Link>
-          <Link href="#WhyMe" className="block py-2 px-4 text-white hover:bg-[#fe090a]">Diferenciais</Link>
-          <Link href="#Contact" className="block py-2 px-4 text-white hover:bg-[#fe090a]">Contato</Link>
+        <div className="md:hidden bg-[#fff]">
+          <Link href="#Hero" className="block py-2 px-4 text-black hover:bg-[#fe090a]">Home</Link>
+          <Link href="#About" className="block py-2 px-4 text-black hover:bg-[#fe090a]">Sobre</Link>
+          <Link href="#Service" className="block py-2 px-4 text-black hover:bg-[#fe090a]">Serviços</Link>
+          <Link href="#WhyMe" className="block py-2 px-4 text-black hover:bg-[#fe090a]">Diferenciais</Link>
+          <Link href="#Contact" className="block py-2 px-4 text-black hover:bg-[#fe090a]">Contato</Link>
         </div>
       )}
     </div>
