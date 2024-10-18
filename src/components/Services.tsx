@@ -90,7 +90,7 @@ const ServicesSection: React.FC = () => {
       <ServiceFeature
         number="1"
         title="Troca de Tela"
-        description="Substituímos a tela de seu smartphone com agilidade e eficiência, garantindo qualidade no reparo."
+        description="Substituímos a tela do seu smartphone com agilidade e eficiência, garantindo qualidade no reparo."
         imageSrc="/images/troca-tela.png" // Caminho da imagem
         isRed={true}
       />
@@ -106,7 +106,7 @@ const ServicesSection: React.FC = () => {
       <ServiceFeature
         number="3"
         title="Aplicação de Película"
-        description="Aplicamos películas de proteção para telas, garantindo maior durabilidade e segurança contra arranhões."
+        description="Aplicamos películas de proteção para telas, garantindo maior durabilidade e segurança contra arranhões e quedas."
         imageSrc="" // Caminho da imagem
         isRed={true}
       />
