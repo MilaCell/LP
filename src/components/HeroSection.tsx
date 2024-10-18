@@ -68,7 +68,7 @@ const HeroSection = () => {
               </motion.span>
             </motion.p>
             <motion.p variants={textVariants} className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl text-black mt-4 font-['Roboto_Condensed']">
-              Assistência em Geral, Capinha, Película e Muito Mais.
+              Assistência em Geral, Capinha, Película, Acessórios e Muito Mais.
             </motion.p> 
             <div className='w-full sm:w-[80%] md:w-[70%] lg:w-[60%] flex items-center justify-start mt-6 -skew-x-12'>
               <Link href="https://wa.me/5516981841942" passHref>
