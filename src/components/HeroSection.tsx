@@ -49,7 +49,6 @@ const HeroSection = () => {
         /> */}
         
         <div className="absolute inset-0 bg-gradient-to-tr from-white via-white/70 to-[#fe090946] opacity-100" />
-        <ScreenBreak />
       </div>
 
       {/* <AnimatedPlayIcons /> */}
