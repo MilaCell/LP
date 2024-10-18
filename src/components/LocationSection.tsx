@@ -1,6 +1,6 @@
 import React from 'react';
 import { DiagonalDivisionTopLeft } from './DiagonalSvg';
-import { ButtonCTA } from './ButtonCTA';
+import { ButtonOpenMap } from './ButtonOpenMap';
 
 const LocationSection: React.FC = () => (
   <section id="Location" className="bg-[#000] w-full flex flex-col justify-center items-center relative overflow-hidden">
@@ -45,7 +45,7 @@ const LocationSection: React.FC = () => (
             Segunda a Sexta: 9h às 18h<br />
             Sábado: 8h às 14h
           </p>
-          <ButtonCTA variant='red' />
+          <ButtonOpenMap variant='red' />
         </div>
         <div className="w-[85%] md:w-1/2 relative h-[300px] md:h-[400px] -skew-x-12 bg-black overflow-hidden">
           <div className="absolute inset-0 skew-x-12 scale-125">
