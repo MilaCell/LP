@@ -52,7 +52,7 @@ const HeroSection = () => {
         <ScreenBreak />
       </div>
 
-      <AnimatedPlayIcons />
+      {/* <AnimatedPlayIcons /> */}
       <div className="relative z-[1] w-full px-4 sm:px-6 lg:px-8 py-12 md:py-24 font-['Mona_Sans_Compact',_Tahoma,_sans-serif]">
         <motion.div 
           className="flex flex-col gap-2 md:items-start text-left opacity-100"
