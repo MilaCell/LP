@@ -9,7 +9,7 @@ const ScreenBreak: React.FC = () => {
     // Inicia a animação após 5 segundos
     const timer = setTimeout(() => {
       setIsAnimating(true);
-    }, 5000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -40,7 +40,7 @@ const ScreenBreak: React.FC = () => {
   };
 
   // Aumentei significativamente o número de rachaduras
-  const cracks = generateCracks(50);
+  const cracks = generateCracks(20);
 
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-white z-20">
