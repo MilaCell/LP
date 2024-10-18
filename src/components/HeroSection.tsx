@@ -48,7 +48,7 @@ const HeroSection = () => {
         
         <div className="absolute inset-0 bg-gradient-to-tr from-white via-white/70 to-[#fe090946] opacity-100" />
       </div>
-      <div className="absolute left-[80%] h-[27rem] w-60 ">  
+      <div className="absolute left-[75%] md:left-[80%] h-[27rem] w-60 ">  
       <BreakingPhone />
       </div>
       {/* <AnimatedPlayIcons /> */}
