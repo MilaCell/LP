@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AnimatedPlayIcons from './AnimationPlayIcons';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import ScreenBreak from './ScreenBreak';
 
 const HeroSection = () => {
   const textVariants = {
@@ -46,7 +47,9 @@ const HeroSection = () => {
           className="filter opacity-60"
           priority
         /> */}
+        
         <div className="absolute inset-0 bg-gradient-to-tr from-white via-white/70 to-[#fe090946] opacity-100" />
+        <ScreenBreak />
       </div>
 
       <AnimatedPlayIcons />

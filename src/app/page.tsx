@@ -11,12 +11,16 @@ import SupportSection from '@/components/SupportSection';
 import {DiagonalDivisionTopLeft} from '@/components/DiagonalSvg';
 import LocationSection from '@/components/LocationSection';
 import MovingInstagramText from '@/components/MovingInstagramText';
+import ScreenBreak from '@/components/ScreenBreak';
 const Home: React.FC = () => {
   return (
     <div>
       <Navbar />
       <HeroSection />
-
+{/* 
+      <div className='w-full flex justify-center'>
+        
+      </div> */}
       <div className='w-full flex justify-center'>  
         <AboutSection />
       </div>
