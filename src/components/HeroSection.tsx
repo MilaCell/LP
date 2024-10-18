@@ -1,10 +1,8 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
-import AnimatedPlayIcons from './AnimationPlayIcons';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
-import ScreenBreak from './ScreenBreak';
+import BreakingPhone from './BreakingPhone';
 
 const HeroSection = () => {
   const textVariants = {
@@ -50,7 +48,9 @@ const HeroSection = () => {
         
         <div className="absolute inset-0 bg-gradient-to-tr from-white via-white/70 to-[#fe090946] opacity-100" />
       </div>
-
+      <div className="absolute left-[80%] h-[27rem] w-60 ">  
+      <BreakingPhone />
+      </div>
       {/* <AnimatedPlayIcons /> */}
       <div className="relative z-[1] w-full px-4 sm:px-6 lg:px-8 py-12 md:py-24 font-['Mona_Sans_Compact',_Tahoma,_sans-serif]">
         <motion.div 
