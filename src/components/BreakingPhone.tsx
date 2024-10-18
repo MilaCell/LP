@@ -8,7 +8,7 @@ const BreakingPhone: React.FC = () => {
   const [isGifPlaying, setIsGifPlaying] = useState(true);
 
   useEffect(() => {
-    const gifDuration = 1500; // Duração aproximada do GIF em milissegundos (5 segundos aqui)
+    const gifDuration = 500; // Duração aproximada do GIF em milissegundos (5 segundos aqui)
     const timer = setTimeout(() => {
       setIsGifPlaying(false); // Para de exibir o GIF após a duração
     }, gifDuration);
