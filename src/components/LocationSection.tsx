@@ -38,7 +38,7 @@ const LocationSection: React.FC = () => (
           <h4 className="text-2xl font-bold text-white mb-4">Nosso Endereço</h4>
           <p className="text-white text-lg mb-4">
             Rua João Guião, 1010 - Vila Virgínia<br />
-            Ribeirão Preto - SP, 14030-580
+            Ribeirão Preto - SP, 14030-440
           </p>
           <h4 className="text-2xl font-bold text-white mb-4">Horário de Funcionamento</h4>
           <p className="text-white text-lg mb-4">
