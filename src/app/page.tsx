@@ -15,7 +15,7 @@ const Home: React.FC = () => {
   return (
     <div>
       <Navbar />
-      {/* <HeroSection /> */}
+      <HeroSection />
 
       <div className='w-full flex justify-center'>  
         <AboutSection />
