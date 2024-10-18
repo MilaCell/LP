@@ -83,7 +83,7 @@ const ServicesSection: React.FC = () => {
         </div>
          
         <p className="text-xl sm:text-3xl text-white mb-8 z-10 md:max-w-[50%]">
-          Na Milacell, cuidamos de seus aparelhos como se fossem nossos. Confira alguns dos serviços que oferecemos:
+          Na Milacell, cuidamos de seu aparelho como se fosse nosso. Confira alguns dos serviços que oferecemos:
         </p>
       </div>
       

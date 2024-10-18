@@ -22,7 +22,6 @@ const Navbar: React.FC = () => {
         behavior: 'smooth'
       });
       
-      // Fecha o menu mobile após clicar
       setIsMenuOpen(false);
     }
   };
@@ -40,9 +39,19 @@ const Navbar: React.FC = () => {
     cursor-pointer
   `;
 
+  const mobileLinkClasses = `
+    block py-4 px-8 
+    text-white text-xl
+    hover:bg-white hover:text-[#fe090a]
+    transition-all duration-300
+    font-['Mona_Sans_Medium',_Tahoma,_sans-serif]
+    cursor-pointer
+    border-b border-white/20
+  `;
+
   return (
     <div className={`fixed w-full z-50 transition-all duration-300 bg-transparent`}>
-      <div>
+      <div className={`${isMenuOpen ? 'bg-[#fe090a]' : ''} md:bg-transparent`}>
         <div className="flex items-center justify-between">
           <div className='flex items-center bg-[#fe090a] min-w-60 -skew-x-12 px-6 h-16'>
             <a 
@@ -91,18 +100,18 @@ const Navbar: React.FC = () => {
               <span className="skew-x-12 inline-block">Contato</span>
             </a>
           </nav>
-          <div className="md:hidden h-16 w-16 bg-white">
+          <div className="md:hidden h-16 w-16 bg-[#fe090a] flex items-center justify-center">
             <button
               onClick={toggleMenu}
-              className="flex items-center justify-center text-white focus:outline-none h-16 w-16 bg-white"
+              className="flex items-center justify-center text-white focus:outline-none h-16 w-16"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
-                <svg className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="#000">
+                <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
-                <svg className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="#000">
+                <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               )}
@@ -111,37 +120,39 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden bg-[#fff]">
-          <a 
-            onClick={(e) => handleScroll(e, '#Hero')}
-            className="block py-2 px-4 text-black hover:bg-[#fe090a] hover:text-white cursor-pointer"
-          >
-            Home
-          </a>
-          <a 
-            onClick={(e) => handleScroll(e, '#About')}
-            className="block py-2 px-4 text-black hover:bg-[#fe090a] hover:text-white cursor-pointer"
-          >
-            Sobre
-          </a>
-          <a 
-            onClick={(e) => handleScroll(e, '#Service')}
-            className="block py-2 px-4 text-black hover:bg-[#fe090a] hover:text-white cursor-pointer"
-          >
-            Serviços
-          </a>
-          <a 
-            onClick={(e) => handleScroll(e, '#WhyMe')}
-            className="block py-2 px-4 text-black hover:bg-[#fe090a] hover:text-white cursor-pointer"
-          >
-            Diferenciais
-          </a>
-          <a 
-            onClick={(e) => handleScroll(e, '#Contact')}
-            className="block py-2 px-4 text-black hover:bg-[#fe090a] hover:text-white cursor-pointer"
-          >
-            Contato
-          </a>
+        <div className="md:hidden bg-[#fe090a] animate-fadeIn">
+          <div className="py-4">
+            <a 
+              onClick={(e) => handleScroll(e, '#Hero')}
+              className={mobileLinkClasses}
+            >
+              Home
+            </a>
+            <a 
+              onClick={(e) => handleScroll(e, '#About')}
+              className={mobileLinkClasses}
+            >
+              Sobre
+            </a>
+            <a 
+              onClick={(e) => handleScroll(e, '#Service')}
+              className={mobileLinkClasses}
+            >
+              Serviços
+            </a>
+            <a 
+              onClick={(e) => handleScroll(e, '#WhyMe')}
+              className={mobileLinkClasses}
+            >
+              Diferenciais
+            </a>
+            <a 
+              onClick={(e) => handleScroll(e, '#Contact')}
+              className={mobileLinkClasses}
+            >
+              Contato
+            </a>
+          </div>
         </div>
       )}
     </div>
