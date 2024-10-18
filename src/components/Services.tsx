@@ -70,7 +70,7 @@ const ServicesSection: React.FC = () => {
             SERVIÇOS
           </h2>
         </div>
-        <div className='relative z-10 max-w-[70%]'>      
+        <div className='relative z-10 md:max-w-[70%] max-w-[85%]'>      
           <h3
             className="text-4xl sm:text-8xl font-bold mb-6 text-white font-['Roboto_Condensed'] "
             style={{
@@ -82,7 +82,7 @@ const ServicesSection: React.FC = () => {
           </h3>
         </div>
          
-        <p className="text-xl sm:text-3xl text-white mb-8 z-10 max-w-[50%]">
+        <p className="text-xl sm:text-3xl text-white mb-8 z-10 md:max-w-[50%]">
           Na Milacell, cuidamos de seus aparelhos como se fossem nossos. Confira alguns dos serviços que oferecemos:
         </p>
       </div>

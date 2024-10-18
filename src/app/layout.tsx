@@ -60,6 +60,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
+      <script src="https://static.elfsight.com/platform/platform.js" async></script>
       <body
         className={cn(
           "min-h-screen bg-background font-inter antialiased mx-auto pt-0 sm:pt-0 overflow-x-hidden w-[100vw] max-w-[100vw]",

@@ -6,9 +6,9 @@ const LocationSection: React.FC = () => (
   <section id="Location" className="bg-[#000] w-full flex flex-col justify-center items-center relative overflow-hidden">
     <DiagonalDivisionTopLeft />
     <div className="text-center relative py-20 px-4 max-w-7xl flex flex-col justify-center w-full items-center">
-      <div className='absolute bottom-[90%] sm:bottom-[85%] md:bottom-[70%] left-0 right-0 flex items-center justify-center'>        
+      <div className='absolute bottom-[88%] md:bottom-[70%] left-0 right-0 flex items-center justify-center'>        
         <h2
-          className="inline-block text-[6.5rem] sm:text-[10rem] md:text-[14rem] font-bold mb-4 uppercase font-['Roboto_Condensed']"
+          className="inline-block text-[3.5rem] sm:text-[10rem] md:text-[14rem] font-bold mb-4 uppercase font-['Roboto_Condensed']"
           style={{
             color: '#000',
             WebkitTextStrokeWidth: '2px',
@@ -47,7 +47,7 @@ const LocationSection: React.FC = () => (
           </p>
           <ButtonCTA variant='red' />
         </div>
-        <div className="w-full md:w-1/2 relative h-[300px] md:h-[400px] -skew-x-12 bg-black overflow-hidden">
+        <div className="w-[85%] md:w-1/2 relative h-[300px] md:h-[400px] -skew-x-12 bg-black overflow-hidden">
           <div className="absolute inset-0 skew-x-12 scale-125">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1860.0735013159426!2d-47.82699789999999!3d-21.1863185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9be921186d693%3A0xfc3381e761288b8c!2sR.%20Dr.%20Jo%C3%A3o%20Gui%C3%A3o%2C%201010%20-%20Vila%20Virginia%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014030-440!5e0!3m2!1spt-BR!2sbr!4v1729204258409!5m2!1spt-BR!2sbr" 

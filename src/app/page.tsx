@@ -10,6 +10,7 @@ import ContactSection from '@/components/ContactSection';
 import SupportSection from '@/components/SupportSection';
 import {DiagonalDivisionTopLeft} from '@/components/DiagonalSvg';
 import LocationSection from '@/components/LocationSection';
+import MovingInstagramText from '@/components/MovingInstagramText';
 const Home: React.FC = () => {
   return (
     <div>
@@ -54,6 +55,9 @@ const Home: React.FC = () => {
         <LocationSection />
       </div>
       {/* <SupportSection/> */}
+      <MovingInstagramText />
+      <div className="elfsight-app-3ca6cf19-e8fa-454d-935e-51bcdee5897c" data-elfsight-app-lazy></div>
+      
       <Footer />
     </div>
   );
