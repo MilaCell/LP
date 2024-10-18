@@ -28,7 +28,7 @@ const WhyMeSection: React.FC = () => {
               textTransform: 'uppercase'
             }}
           >
-            Agilidade e Conveniência
+            Agilidade e Competência
           </h3>
         </div>
          
