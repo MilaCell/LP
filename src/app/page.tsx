@@ -15,7 +15,7 @@ const Home: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <HeroSection />
+      {/* <HeroSection /> */}
 
       <div className='w-full flex justify-center'>  
         <AboutSection />
@@ -56,7 +56,6 @@ const Home: React.FC = () => {
       </div>
       {/* <SupportSection/> */}
       <MovingInstagramText />
-      <div className="elfsight-app-3ca6cf19-e8fa-454d-935e-51bcdee5897c" data-elfsight-app-lazy></div>
       
       <Footer />
     </div>
