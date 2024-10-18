@@ -50,10 +50,10 @@ const Navbar: React.FC = () => {
   `;
 
   return (
-    <div className={`fixed w-full z-50 transition-all duration-300 bg-transparent`}>
+    <div className={`fixed w-full z-50 transition-all duration-300 bg-[#fe090a] md:bg-transparent`}>
       <div className={`${isMenuOpen ? 'bg-[#fe090a]' : ''} md:bg-transparent`}>
         <div className="flex items-center justify-between">
-          <div className='flex items-center bg-[#fe090a] min-w-60 -skew-x-12 px-6 h-16'>
+          <div className='flex items-center bg-[#fe090a] min-w-32 md:min-w-60 md:-skew-x-12 px-6 h-16'>
             <a 
               onClick={(e) => handleScroll(e, '#Hero')}
               className="flex-shrink-0 text-white cursor-pointer"
@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
                 alt="Logo"
                 width={180}
                 height={80}
-                className="w-auto h-auto skew-x-12"
+                className="w-auto h-auto md:skew-x-12"
                 priority
               />
             </a>
