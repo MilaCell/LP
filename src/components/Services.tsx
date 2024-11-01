@@ -7,12 +7,13 @@ interface ServiceFeatureProps {
   number: string;
   title: string;
   description: string;
-  imageSrc: string; // Caminho da imagem
+  mediaSource: string;
   isRed: boolean;
+  isVideo?: boolean;
 }
 
-const ServiceFeature: React.FC<ServiceFeatureProps> = ({ number, title, description, imageSrc, isRed }) => (
-  <div className={`sticky top-0 w-full pt-20  py-10 sm:py-20 ${isRed ? 'bg-[#fe090a]' : 'bg-white'}`}>
+const ServiceFeature: React.FC<ServiceFeatureProps> = ({ number, title, description, mediaSource, isRed, isVideo = false }) => (
+  <div className={`sticky top-0 w-full pt-20 py-10 sm:py-20 ${isRed ? 'bg-[#fe090a]' : 'bg-white'}`}>
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
       <div className="w-full lg:w-1/2 pr-0 lg:pr-8 flex flex-col sm:flex-row gap-4 items-center mb-8 lg:mb-0">
         <div className={`text-6xl sm:text-8xl lg:text-[15rem] font-black ${isRed ? 'text-white' : 'text-[#fe090a]'}`}>{number}</div>
@@ -22,23 +23,31 @@ const ServiceFeature: React.FC<ServiceFeatureProps> = ({ number, title, descript
         </div>
       </div>
       <div className="w-full lg:w-1/2 h-[200px] sm:h-[250px] lg:h-[350px] aspect-video relative">
-        {/* Fundo preto inclinado */}
-        <div 
-          className="f-1 h-full w-full bg-black"
-        />
-        
-        {/* Contêiner da imagem */}
-        {/* <div className="absolute inset-0">
-          <div className="w-full h-full relative transform origin-top-left" style={{ top: '-10%', height: '120%' }}>
-            <Image 
-              src={imageSrc}
-              alt={title}
-              fill
-              className="object-contain"
-              priority
+        <div className="f-1 h-full w-full bg-black">
+          {isVideo ? (
+            <video
+              src={mediaSource}
+              className="w-full h-full object-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls={false}
             />
-          </div>
-        </div> */}
+          ) : (
+            <div className="absolute inset-0">
+              <div className="w-full h-full relative transform origin-top-left" style={{ top: '-10%', height: '120%' }}>
+                <Image 
+                  src={mediaSource}
+                  alt={title}
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   </div>
@@ -66,7 +75,7 @@ const ServicesSection: React.FC = () => {
               WebkitTextStrokeColor: '#ffffff1e',
               lineHeight: '1',
             }}
-            >
+          >
             SERVIÇOS
           </h2>
         </div>
@@ -91,15 +100,16 @@ const ServicesSection: React.FC = () => {
         number="1"
         title="Troca de Tela"
         description="Substituímos a tela do seu smartphone com agilidade e eficiência, garantindo qualidade no reparo."
-        imageSrc="/images/troca-tela.png" // Caminho da imagem
+        mediaSource="/video_one.mp4"
         isRed={true}
+        isVideo={true}
       />
 
       <ServiceFeature
         number="2"
-        title="Venda de Acessórios"
+        title="Venda de Acessórios e Aparelhos"
         description="Temos uma variedade de acessórios para todos os modelos de smartphones, como capas, fones e carregadores."
-        imageSrc="/images/acessorios.png" // Caminho da imagem
+        mediaSource="/images/acessorios.png"
         isRed={false}
       />
 
@@ -107,16 +117,18 @@ const ServicesSection: React.FC = () => {
         number="3"
         title="Aplicação de Película"
         description="Aplicamos películas de proteção para telas, garantindo maior durabilidade e segurança contra arranhões e quedas."
-        imageSrc="" // Caminho da imagem
+        mediaSource="/images/vidro-traseiro.png"
         isRed={true}
+        isVideo={true}
       />
 
       <ServiceFeature
         number="4"
         title="Troca de Vidro Traseiro"
         description="Fazemos a substituição do vidro traseiro do seu smartphone de forma rápida e eficaz."
-        imageSrc="/images/vidro-traseiro.png" // Caminho da imagem
+        mediaSource="/video_traseiro.mp4"
         isRed={false}
+        isVideo={true}
       />
     </section>
   );

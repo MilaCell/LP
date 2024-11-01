@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import BreakingPhone from './BreakingPhone';
+import Image from 'next/image';
 
 const HeroSection = () => {
   const textVariants = {
@@ -37,14 +38,14 @@ const HeroSection = () => {
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0 overflow-hidden w-[100vw]">
-        {/* <Image
-          src="/banner.jpg"
+        <Image
+          src="/foto_entrada.jpg"
           alt="Banner"
           layout="fill"
           objectFit="cover"
-          className="filter opacity-60"
+          className="filter opacity-100"
           priority
-        /> */}
+        />
         
         <div className="absolute inset-0 bg-gradient-to-tr from-white via-white/70 to-[#fe090946] opacity-100" />
       </div>
