@@ -41,7 +41,7 @@ const ServiceFeature: React.FC<ServiceFeatureProps> = ({ number, title, descript
                   src={mediaSource}
                   alt={title}
                   fill
-                  className="object-contain"
+                  className="object-cover"
                   priority
                 />
               </div>
@@ -100,16 +100,15 @@ const ServicesSection: React.FC = () => {
         number="1"
         title="Troca de Tela"
         description="Substituímos a tela do seu smartphone com agilidade e eficiência, garantindo qualidade no reparo."
-        mediaSource="/video_one.mp4"
+        mediaSource="/images/frontal.svg"
         isRed={true}
-        isVideo={true}
       />
 
       <ServiceFeature
         number="2"
-        title="Venda de Acessórios e Aparelhos"
+        title="Venda de Acessórios"
         description="Temos uma variedade de acessórios para todos os modelos de smartphones, como capas, fones e carregadores."
-        mediaSource="/images/acessorios.png"
+        mediaSource="/images/acessorios.svg"
         isRed={false}
       />
 
@@ -117,18 +116,24 @@ const ServicesSection: React.FC = () => {
         number="3"
         title="Aplicação de Película"
         description="Aplicamos películas de proteção para telas, garantindo maior durabilidade e segurança contra arranhões e quedas."
-        mediaSource="/images/vidro-traseiro.png"
+        mediaSource="/images/pelicula.svg"
         isRed={true}
-        isVideo={true}
       />
 
       <ServiceFeature
         number="4"
         title="Troca de Vidro Traseiro"
         description="Fazemos a substituição do vidro traseiro do seu smartphone de forma rápida e eficaz."
-        mediaSource="/video_traseiro.mp4"
+        mediaSource="/images/traseiro.svg"
         isRed={false}
-        isVideo={true}
+      />
+      
+      <ServiceFeature
+        number="5"
+        title="Aparelhos Novos e Seminovos"
+        description="Oferecemos uma seleção de aparelhos novos e seminovos, prontos para atender às suas necessidades e proporcionar a melhor experiência."
+        mediaSource="/images/telefones.svg"
+        isRed={true}
       />
     </section>
   );
