@@ -108,7 +108,7 @@ const ServicesSection: React.FC = () => {
         number="2"
         title="Venda de Acessórios"
         description="Temos uma variedade de acessórios para todos os modelos de smartphones, como capas, fones e carregadores."
-        mediaSource="/images/acessorios.svg"
+        mediaSource="/images/accs.jpg"
         isRed={false}
       />
 
