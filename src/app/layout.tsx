@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 // Importação da onte Inter
 import { Inter, Roboto_Condensed } from 'next/font/google';
-
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react";
 // Configuração da fonte Inter
 const inter = Inter({
   subsets: ['latin'], // Defina os subsets conforme necessário
@@ -68,6 +69,8 @@ export default function RootLayout({
         )}
       >
         {children}
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
