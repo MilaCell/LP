@@ -18,7 +18,7 @@ const buttonVariants = {
 };
 
 interface ButtonCTAProps {
-  variant?: 'red' | 'black';
+  variant?: 'white' | 'black';
 }
 
 export const ButtonCTA: React.FC<ButtonCTAProps> = ({ variant = 'black' }) => {
@@ -34,7 +34,7 @@ export const ButtonCTA: React.FC<ButtonCTAProps> = ({ variant = 'black' }) => {
   `;
 
   const variantClasses = {
-    red: 'bg-[#fe090a] hover:bg-white hover:text-[#fe090a]',
+    white: 'bg-[#fe090a] hover:bg-white hover:text-[#fe090a]',
     black: 'bg-black hover:bg-white hover:text-black',
   };
 
