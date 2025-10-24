@@ -1,11 +1,13 @@
 'use client';
-import React from 'react';
-import Link from 'next/link';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import BreakingPhone from './BreakingPhone';
 import Image from 'next/image';
+import { WhatsAppDialog } from './WhatsAppDialog';
 
 const HeroSection = () => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
   const textVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { 
@@ -50,9 +52,9 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-tr from-white via-white/70 to-[#fe090946] opacity-100" />
       </div>
       <div className="absolute left-[75%] md:left-[80%] h-[27rem] w-60 ">  
-      <BreakingPhone />
+        <BreakingPhone />
       </div>
-      {/* <AnimatedPlayIcons /> */}
+      
       <div className="relative z-[1] w-full px-4 sm:px-6 lg:px-8 py-12 md:py-24 font-['Mona_Sans_Compact',_Tahoma,_sans-serif]">
         <motion.div 
           className="flex flex-col gap-2 md:items-start text-left opacity-100"
@@ -71,28 +73,34 @@ const HeroSection = () => {
               Assistência em Geral, Capinha, Película, Acessórios e Muito Mais.
             </motion.p> 
             <div className='w-full sm:w-[80%] md:w-[70%] lg:w-[60%] flex items-center justify-start mt-6 -skew-x-12'>
-              <Link href="https://wa.me/5516981841942" passHref>
-                <motion.button 
-                  variants={buttonVariants}
-                  className="
-                    inline-flex items-center justify-center
-                    text-3xl text-white
-                    py-6 px-4 md:py-8 md:px-6 hover:px-12
-                    mt-4 sm:mt-6
-                    bg-[#fe090a] hover:bg-black
-                    hover:text-white
-                    transition-all duration-300
-                  "
-                >
-                  <span className="-skew-x-6 inline-flex items-center">
-                    Contato 
-                  </span>
-                </motion.button>
-              </Link>
+              <motion.button 
+                onClick={() => setIsDialogOpen(true)}
+                variants={buttonVariants}
+                className="
+                  inline-flex items-center justify-center
+                  text-3xl text-white
+                  py-6 px-4 md:py-8 md:px-6 hover:px-12
+                  mt-4 sm:mt-6
+                  bg-[#fe090a] hover:bg-black
+                  hover:text-white
+                  transition-all duration-300
+                  cursor-pointer
+                "
+              >
+                <span className="-skew-x-6 inline-flex items-center">
+                  Contato 
+                </span>
+              </motion.button>
             </div>
           </div>
         </motion.div>
       </div>
+
+      <WhatsAppDialog 
+        isOpen={isDialogOpen} 
+        onClose={() => setIsDialogOpen(false)}
+        variant="black"
+      />
     </section>
   );
 };

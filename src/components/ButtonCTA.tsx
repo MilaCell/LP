@@ -1,8 +1,8 @@
 'use client';
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { twMerge } from "tailwind-merge";
+import { WhatsAppDialog } from './WhatsAppDialog';
 
 const buttonVariants = {
   hidden: { opacity: 0 },
@@ -22,12 +22,15 @@ interface ButtonCTAProps {
 }
 
 export const ButtonCTA: React.FC<ButtonCTAProps> = ({ variant = 'black' }) => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
   const baseClasses = `
     inline-flex items-center justify-center
     text-3xl text-white
     py-6 px-4 md:py-8 md:px-6 hover:px-12
     mt-4 sm:mt-6
     transition-all duration-300
+    cursor-pointer
   `;
 
   const variantClasses = {
@@ -38,9 +41,10 @@ export const ButtonCTA: React.FC<ButtonCTAProps> = ({ variant = 'black' }) => {
   const buttonClasses = twMerge(baseClasses, variantClasses[variant]);
 
   return (
-    <div className="w-full sm:w-[80%] md:w-[70%] lg:w-[60%] flex items-center justify-start mt-6 -skew-x-12">
-      <Link href="https://wa.me/5516981841942?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento" passHref>
+    <>
+      <div className="w-full sm:w-[80%] md:w-[70%] lg:w-[60%] flex items-center justify-start mt-6 -skew-x-12">
         <motion.button 
+          onClick={() => setIsDialogOpen(true)}
           variants={buttonVariants}
           className={buttonClasses}
         >
@@ -51,7 +55,13 @@ export const ButtonCTA: React.FC<ButtonCTAProps> = ({ variant = 'black' }) => {
             Contato 
           </span>
         </motion.button>
-      </Link>
-    </div>
+      </div>
+
+      <WhatsAppDialog 
+        isOpen={isDialogOpen} 
+        onClose={() => setIsDialogOpen(false)}
+        variant={variant}
+      />
+    </>
   );
 };
